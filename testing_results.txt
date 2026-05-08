@@ -1,0 +1,39 @@
+Assignment 9 - Testing Results for tax_calculator_gui.py
+
+Test 1:
+Gross income entered: 50000
+Dependents entered: 1
+Expected result:
+50000 - 10000 - (3000 * 1) = 37000 taxable income
+37000 * 0.20 = 7400
+GUI output: 7400.00
+
+Test 2:
+Gross income entered: 50000
+Dependents entered: 2
+Expected result:
+50000 - 10000 - (3000 * 2) = 34000 taxable income
+34000 * 0.20 = 6800
+GUI output: 6800.00
+
+Test 3:
+Gross income entered: 25000
+Dependents entered: 2
+Expected result:
+25000 - 10000 - (3000 * 2) = 9000 taxable income
+9000 * 0.20 = 1800
+GUI output: 1800.00
+
+Test 4:
+Gross income entered: 8000
+Dependents entered: 0
+Expected result:
+8000 - 10000 = -2000 taxable income
+Because taxable income is below zero, the program uses 0.
+0 * 0.20 = 0
+GUI output: 0.00
+
+Note:
+The script follows the GUI approach from Chapter 9.  It creates a window class,
+adds labels, entry fields, and a command button, registers computeTax as the
+button's command, and uses computeTax as the event handler.
